@@ -1,0 +1,159 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack - applies to every element */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+img {
+  margin:10px;
+}
+h1, h2, h3 {
+  font-weight:600;
+}
+h1 {
+  color:#FFF;
+  font-size:24px;
+  text-align:center;
+  margin:40px 0;
+}
+h2 {
+  font-size:20px;
+}
+h3 {
+  color:#f9e42e;
+  font-size:24px;
+  text-align:center;
+  padding: 40px 0;
+}
+p, li {
+  padding-bottom:10px;
+}
+ul {
+  list-style:disc inside;
+}
+li {
+  line-height:18px;
+}
+blockquote, .cite {
+  font-size:18px;
+  text-align:center;
+}
+blockquote {
+  font-style:italic;
+  font-weight:300;
+}
+.cite {
+  font-weight:600;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-image: url("../images/header_bg.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:500px;
+}
+.logo {
+  color:#FFF;
+  font-size: 24px;
+  font-weight: 800; 
+  padding: 20px 10%;
+}
+.benefits {
+  background:#f0efef;
+  height:auto;
+  padding:40px 10%;
+}
+.testimonial {
+  background-image: url("../images/testimonial_bg.jpg");
+  background-size:cover;
+  color:white;
+  height:auto;
+  padding: 50px 35%;
+}
+.signup {
+  background:#f9e42e;
+}
+footer {
+  background:#121212;
+}
+.social {
+  width:110px;
+  margin:20px 425px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.btn-yellow, .btn-black {
+  border:none;
+  border-radius: 5px;
+  height:30px;
+  width:16%;
+  font-weight:600;
+  padding: 4px 10px;
+  margin: 15px 42%;
+}
+.btn-yellow a {
+    color:#033048;
+}
+.btn-black a {
+    color:white;
+}
+.btn-yellow a:hover, .btn-black a:hover {
+  text-decoration:underline;
+}
+.btn-yellow {
+  background:#f9e42e;
+  color:#033048;
+  font-size:14px;
+}
+.btn-black {
+  background:#033048;
+  color:#FFF;
+  font-size:12px;
+}
+.copyright {
+  color:white;
+  font-size:9px;
+  font-weight:600;
+  text-align:center;
+  padding:20px 0;
+}
