@@ -57,7 +57,7 @@ h3 {
 p, li {
   padding-bottom:10px;
 }
-p:first-child:first-letter {
+.blog p:first-of-type:first-letter {
     font-size: 96px; 
     float: left; 
     margin: 15px 15px 0 0; 
