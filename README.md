@@ -1,78 +1,68 @@
-#FEWD Week #2: Styling with CSS
+#FEWD Week #4: JavaScript Basics
 
-This assignment is geared to challenge you to create a **single-column** landing page and apply more advanced CSS techniques to it.  
-
-**A crucial component of this assignment is to practice building based off of an existing design!** 
-
-You have some options for this assignment, but in both cases, you are asked to use the included *design_file.txt*:
-
-- We are including an example mockup as one option for you to build from
-
-- You may also sketch your own **single-column** page and build that
-
-  If you go this route though, please
-
-  - be aware that you will be building off of the site you create for the next couple of assignments
-  - include a picture/copy of your mockup/wireframe/sketch with your submission 
-  - adhere to the *design_file.txt* by styling the corresponding element in your own page..for example, style your "logo/primary heading" instead of "Relaxr" as it is described
-
-  ​
+<br>
 
 ---
 
-### Real-World Applications
 
-- Building a website from a [design file](starter_code/design_file.txt)
-- Integrating advanced CSS properties
-- Choosing and utilizing HTML5 structural elements
-- Using CSS Resets to "normalize" the rendering of your page across different browsers
-- Using the Box Model to style element borders and structure your page
+###Description 
+
+The team from Relaxr is back...again! They want their page to be more interactive and asked you to add JavaScript to their source code. You've been given the HTML and CSS but will need to create a JavaScript file and add a few different pieces of interactivity:  Users should be able to click a link and have the remainder of the blog's content slide down and appear on the page, both on the main content column and the side bar; users should also be able hide the content when they are finished reading. See a detailed technical explanation below.
+
+If you are feeling inspired and also want some HTML and CSS review feel free to either: 
+
+- Alter the existing Relaxr HTML, CSS, and content to reflect a subject matter that you are interested in.
+- Create a new blog page from scratch and apply the jQuery requirements. Keep in mind if you choose to build a page from scratch you must build one that allows you to complete all the technical requirements. For example, you must include a link or form so that you can complete the `event.preventDefault()` function.
+
+We love to see your creativity in the homework assignments, but please remember if you are going to move away from the Relaxr blog you must still meet the technical requirements.
+
 
 <br>
 
-------
+---
 
-### Technical Requirements
 
-- Use HTML5 structural elements (nav, header, footer)
-- Use a CSS Reset file in addition to your style.css file to style the page
-- Use IDs and Classes to to select and style elements on the page
-- Style your text with the Google Fonts provided by your style guide
-- Follow naming conventions, maintain consistency across .html and .css files and use best practices for naming IDs and Classes
-- Indent nested elements to increase your code's readability
+###Real-World Applications
+
+
+- Practice programmatic thinking to plan before writing code
+- Use basic JavaScript to create an interactive page based on a user action
+- Link an external JavaScript file from HTML
+
 
 <br>
 
-### If you choose to use the sample mockup/site, here is some background...
-
-####Description
+---
 
 
-A hot, new NY Tech Startup, Relaxr, has approached you to help them develop a new landing page for their company. They've handed you the [design file](starter_code/design_file.txt) for the site, along with the copy and assets. You need to take these files and turn it into a landing page.
+###Technical Requirements 
+
+- Prevent a form submission with the ```event.preventDefault()``` function
+- Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
+- Select the appropriate DOM elements with CSS selectors upon a user's click using the ```$.click()``` handler
+- If a user clicks "Read More" on the primary column:
+
+  - have the text in the ```<p>``` tag slide down along with a "Read Less" link in the blog post using  ```$.slideDown()``` and ```$.show()```
+  - hide the "Read More" link using ```$.hide()```
+
+- If a user clicks "Read Less" on the primary column:
+
+  - have the ```<p>``` slide up and hide the "Read Less" link using  ```$.slideUp()``` and ```$.hide()```
+  - show the "Read More" link using ```$.show()```
+
+- Using the same functions as above, if a user clicks the "Learn More" link in the sidebar, have the ```<span>``` inside that ```<p>``` slide down and hide the "Learn More" link using ```$.slideDown()``` and ```$.hide()```
 
 
-![Relaxr Landing Page](https://i.imgur.com/aiNUaDW.png)
-
-*Note: For a view of the full page, see the [jpg](starter_code/images/relaxr_landing.jpg) provided in the deliverable. Don't be alarmed if your font sizes don't perfectly match what you see in the jpg - trust in the design file!*
 
 <br>
-
-
 
 ---
 
 ###Resources
 
-- Starter code can be found inside of the "starter_code" folder for this assignment.
-- [Google Fonts Tutorial](https://developers.google.com/fonts/docs/getting_started)
-- [Box Model explanation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)
-- [Box Model Breakdown](http://learn.shayhowe.com/html-css/opening-the-box-model/)
-- [CSS Tricks difference between IDs and Classes](https://css-tricks.com/the-difference-between-id-and-class/)
-- [What is a CSS Reset?](http://www.cssreset.com/what-is-a-css-reset/)
-- Relaxr's [design file](starter_code/design_file.txt)
-
-
-
+- [Starter Code](starter_code)
+- [Cheat-sheet of jQuery selectors, methods, and events](http://oscarotero.com/jquery/)
+- [Get more practice with jQuery DOM selectors](/Week_04_Intro_Programming/08_Intro_jQuery/starter_code/06_bonus_jquery_dom_selector_practice)
 
 
 <br>
@@ -81,35 +71,40 @@ A hot, new NY Tech Startup, Relaxr, has approached you to help them develop a ne
 
 ###Evaluation / Submission
 
-Please create a new repository on GitHub called "homework-landingpage" and push your code to it when you are ready to submit. Melissa and I will evaluate and will provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). Bonus sections are completely optional. The maximum possible score on this assignment is 12/12.
+
+Please use the same folder and GitHub repository that you used for the previous project ("homework-landingpage"). When ready for evaluation, please push your code to that repository and notify Melissa and I via slack with the link. 
+
+
+We will evaluate against the solution code, and your use of technical elements. We will provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2).  
+
+
+The maximum possible score on this assignment is 16/16. Bonus materials are completely optional.
+
+###Final Project Milestone 1
+
+------
+
+The first Milestone for the Final Project is due on Monday, August 29, 2016.  Please hand in a wireframe (via Slack) with notes directly on it, or as an additional page.  Combined, the two components should convey: 
+
+- the topic/idea that you are interested in focusing on
+- enough insight into scale/scope that Melissa and I can help gauge feasibility in the scope of this class
+- a general sense of how the various technical requirements will be met (how you may use JavaScript or what features you are thinking)
+
+Remeber, there is an example wireframe in the class repo.  
 
 
 
----
+## Bonus Challenges
 
-## Challenge/Bonus
+#### Challenge 1 - Moderate
 
+Add more jQuery effects to the existing Relaxr site. 
 
-
-### Option 1
-
-Create your own blog page using the following:
-
-- Google fonts
-  - Try experimenting with different font styling. Here is a reference to get you started http://www.htmlhelp.com/reference/css/font/
-- Semantic elements
-- Using a reset file
-
-Have fun and be creative with it. Try challenging yourslef with different layouts
+- Take a look at other [jQuery event listeners](https://api.jquery.com/category/events/) and incorporate three or more of them. Some suggestions to get started, try `$.keypress()`, `$.scroll()`, or `$.mouseover()`
+- Use jQuery event listeners (like `$.click()` or `$.keypress()`) with the `$.css()` method to manipulate the styling of elements on different events.
 
 
 
-### Option 2
+#### Challenge 2 - Hard
 
-Find a well designed websited that you like and try to recreate it. Think about what tools you could use to figure out the fonts and colors? Focus on recreating the overall layout even if it isn't pixel perfect. Try to avoid copying the exact code. Don't worry about images (some websites make it hard to copy images) and use a solid background color instead.
-
-Some suggested sites are (listed from least to most difficult): 
-
-- https://twitter.com/
-- http://www.custard.co.uk/
-- https://nike.com/
+Practice your plain vanilla JavaScript skills. Try meeting all of the technical requirements using just JavaScript without jQuery. If you do this option please make sure you still submit the original assignment with jQuery and then submit this in a separate folder. Here is a resource to help get you started https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener. Note that writing 'slide down' and 'slide up' methods can be very challenging without jQuery. Try starting with simply showing and hiding. Then if you are feeling up to the challenge try animating with JavaScript.
